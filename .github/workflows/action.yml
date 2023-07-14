@@ -1,4 +1,4 @@
-name: Build API documentation with Redoc CLI
+name: CI/CD
 
 on:
   push:
