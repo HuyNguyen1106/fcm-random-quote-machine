@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <div id='quote-box'>
+      <div id='quote-box' data-testid="quote-box">
         <div id='text'>{quote.text}</div>
         <div id='author'>{quote.author}</div>
         <div className='quote-box-footer'>
