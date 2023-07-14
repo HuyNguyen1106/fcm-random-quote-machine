@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import TwitterIcon from './twitter-icon-circle.png'
 
 const quotes = [
   {
@@ -50,7 +51,7 @@ function App() {
         <div id='author'>{quote.author}</div>
         <div className='quote-box-footer'>
           <a id='tweet-quote' target="_blank" rel="noreferrer" href={'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent(quote.text + ' - ' + quote.author)}>
-            <img src='%PUBLIC_URL%/twitter-icon-circle.png' alt='Twitter Icon'></img>
+            <img src={TwitterIcon} alt='Twitter Icon'></img>
           </a>
           <button id='new-quote' onClick={onClick}>New Quote</button>
         </div>
