@@ -47,13 +47,13 @@ function App() {
   return (
     <div className="App">
       <div id='quote-box' data-testid="quote-box">
-        <div id='text'>{quote.text}</div>
-        <div id='author'>{quote.author}</div>
+        <div id='text' data-testid="text">{quote.text}</div>
+        <div id='author' data-testid="author">{quote.author}</div>
         <div className='quote-box-footer'>
-          <a id='tweet-quote' target="_blank" rel="noreferrer" href={'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent(quote.text + ' - ' + quote.author)}>
+          <a id='tweet-quote' data-testid="tweet-quote" target="_blank" rel="noreferrer" href={'https://twitter.com/intent/tweet?hashtags=quotes&text=' + encodeURIComponent(quote.text + ' - ' + quote.author)}>
             <img src={TwitterIcon} alt='Twitter Icon'></img>
           </a>
-          <button id='new-quote' onClick={onClick}>New Quote</button>
+          <button id='new-quote' data-testid="new-quote" onClick={onClick}>New Quote</button>
         </div>
       </div>
     </div>
